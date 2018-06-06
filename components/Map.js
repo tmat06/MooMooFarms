@@ -2,8 +2,9 @@ import React from 'react';
 import { View, StyleSheet, Text, Button, Image } from 'react-native';
 import MapView, { Marker } from 'react-native-maps';
 import Geocoder from 'react-native-geocoding';
+import {GOOGLE_API} from 'react-native-dotenv'
 
-Geocoder.init('AIzaSyCHrHyqeAWAijNmgdM5YyIwtbiYpbLLjw0');
+Geocoder.init(GOOGLE_API);
 
 export default class Map extends React.Component {
     constructor() {

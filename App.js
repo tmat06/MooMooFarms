@@ -1,15 +1,11 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import Map from './components/Map';
+import {Router} from './router';
 
 export default class App extends React.Component {
 
   render() {
-    return (
-      <View style={styles.container}>
-        <Map/>
-      </View>
-    );
+    return <Router />
   }
 
 }
